@@ -32,8 +32,14 @@
 ### Главная страница
 ![Главная](screenshots/main.png)
 
+### О нас
+![О нас](screenshots/about.png)
+
 ### Услуги
 ![Услуги](screenshots/services.png)
+
+### Контакты
+![Контакты](screenshots/contacts.png)
 
 ### Форма заявки
 ![Заявка](screenshots/submit_request.png)
@@ -46,6 +52,54 @@
 
 ### Вход
 ![Вход](screenshots/login.png)
+
+## Структура проекта
+
+```
+fire-safety/
+├── public/                          # Корневая папка сайта (DocumentRoot)
+│   ├── admin/                       # Административная панель
+│   │   ├── certificates.php
+│   │   ├── index.php
+│   │   ├── logout.php
+│   │   ├── requests.php
+│   │   ├── services.php
+│   │   └── users.php
+│   ├── assets/                      # Стили, скрипты, шрифты
+│   │   ├── css/
+│   │   │   ├── bootstrap.css
+│   │   │   ├── bootstrap-icons.css
+│   │   │   └── fonts/
+│   │   │       ├── bootstrap-icons.woff
+│   │   │       └── bootstrap-icons.woff2
+│   │   ├── js/
+│   │   │   └── bootstrap.bundle.js
+│   │   └── style.css
+│   ├── database/                    # Дамп базы данных
+│   │   └── pozharka.sql
+│   ├── includes/                    # Подключаемые файлы
+│   │   ├── auth.php
+│   │   └── db.example.php           # Пример конфигурации БД
+│   ├── uploads/                     # Загружаемые изображения (игнорируется Git)
+│   ├── .htaccess
+│   ├── about.php                    # Страница "О нас"
+│   ├── contacts.php                 # Страница "Контакты" с формой обратной связи
+│   ├── index.php                    # Главная страница со слайдером
+│   ├── login.php                    # Вход в аккаунт
+│   ├── logout.php                   # Выход из аккаунта
+│   ├── register.php                 # Регистрация
+│   ├── services.php                 # Список услуг
+│   └── submit_request.php           # Форма оформления заявки
+├── screenshots/                     # Скриншоты для README
+│   ├── main.png
+│   ├── services.png
+│   ├── submit_request.png
+│   ├── submit_request_done.png
+│   ├── admin.png
+│   └── login.png
+├── .gitignore
+└── README.md
+```
 
 ## Установка
 
