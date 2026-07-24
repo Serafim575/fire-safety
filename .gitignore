@@ -1,5 +1,5 @@
 # Конфигурация БД (содержит пароль)
-includes/db.php
+public/include/db.php
 
 # Загруженные изображения
 uploads/
